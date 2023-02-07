@@ -35,8 +35,8 @@ function isLGSeven(number){
         return doubleOfInput;
     }
 }
-// var result = isLGSeven(15);
-// console.log(result);
+var result = isLGSeven(-15);
+console.log(result);
 
 // problem-4 
 
@@ -55,6 +55,28 @@ function findingBadData(numbers){
     return count;
 }
 
-let numbers = [1, 2, 10, 5,];
-let totalCount = findingBadData(numbers);
-console.log(totalCount);
+// let numbers = [1, 2, 10, 5,];
+// let totalCount = findingBadData(numbers);
+// console.log(totalCount);
+
+// problem 5
+
+function gemsToDiamond(num1, num2, num3){
+    let firstFriendDiamond = num1 * 21;
+    let secondFriendDiamond = num2 * 32;
+    let thirdFriendDiamond = num3 * 43;
+
+    let diamondSum = firstFriendDiamond + secondFriendDiamond + thirdFriendDiamond;
+
+    if(diamondSum > 2000){
+        let distributableDiamond = diamondSum - 2000;
+        return distributableDiamond;
+    }
+    else{
+        return diamondSum;
+    }
+    
+}
+
+// let result = gemsToDiamond(100, 5, 1);
+// console.log(result);
